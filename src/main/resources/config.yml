@@ -1,0 +1,33 @@
+#
+# AquariusDailyGive • A plugin for daily rewards
+# Made with <3 by LoRy24
+#
+settings:
+
+  #
+  # This message will be sent to a player when he joins if he can claim his reward.
+  # Value: String with colors
+  #
+  onJoinCanClaimMessage: "§aPuoi riscattare la tua ricompensa giornaliera utilizzando il comando /daily!"
+
+  #
+  # This message will be sent when a player has already claimed the reward, but he tries to execute the /daily command
+  # Value: String with colors
+  #
+  dailyRewardAlreadyClaimedMessage: "§cHai già riscattato il tuo premio giornaliero!"
+
+  #
+  # This message will be sent to a player when he claims his reward using the /daily command.
+  # Value: String with colors
+  #
+  dailyRewardClaimed: "§aHai riscattato il tuo premio giornaliero!"
+
+  #
+  # This list contains all the commands that should be executed (by the console) when the player claims his reward/s
+  # Value: Array list of commands (without the '/')
+  #
+  # Custom args description:
+  # - %player% = The username of the player that claimed the reward
+  #
+  commandsToRun:
+    - "cc give physical comune 8 %player%"

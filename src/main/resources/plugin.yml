@@ -1,0 +1,8 @@
+name: "AquariusDailyGive"
+version: "${project.version}"
+author: "LoRy24"
+main: "com.github.aquariusmc.aquariusdailygive.Entry"
+
+commands:
+  daily:
+    description: "Claim a daily reward"
